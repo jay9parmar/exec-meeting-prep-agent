@@ -1,0 +1,36 @@
+name: Meeting Readiness Check
+
+on:
+  schedule:
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+jobs:
+  check-readiness:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+        pip install python-dotenv pyyaml jinja2 ics pandas
+    
+    - name: Run meeting readiness check
+      run: python src/main.py --check-readiness
+    
+    - name: Commit updated tracker
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add data/tracker.json outputs/
+        git diff --quiet && git diff --staged --quiet || git commit -m "Update meeting readiness tracker [skip ci]"
+        git push

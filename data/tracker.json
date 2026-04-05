@@ -6,10 +6,10 @@
       "date": "2026-04-10 10:00",
       "bm_email": "team-lead@company.com",
       "agenda_ready": true,
-      "slides_ready": true,
+      "slides_ready": false,
       "bm_confirmed": true,
-      "all_ready": true,
-      "missing_items": []
+      "all_ready": false,
+      "missing_items": ["slides"]
     },
     {
       "id": "meeting_002",
@@ -20,11 +20,7 @@
       "slides_ready": false,
       "bm_confirmed": false,
       "all_ready": false,
-      "missing_items": [
-        "agenda",
-        "slides",
-        "BM confirmation"
-      ]
+      "missing_items": ["agenda", "slides", "BM confirmation"]
     },
     {
       "id": "meeting_003",
@@ -35,9 +31,7 @@
       "slides_ready": true,
       "bm_confirmed": false,
       "all_ready": false,
-      "missing_items": [
-        "BM confirmation"
-      ]
+      "missing_items": ["BM confirmation"]
     },
     {
       "id": "meeting_004",
@@ -59,25 +53,8 @@
       "slides_ready": true,
       "bm_confirmed": true,
       "all_ready": false,
-      "missing_items": [
-        "agenda"
-      ]
-    },
-    {
-      "title": "Q4 Executive Review",
-      "date": "2026-04-15 14:00",
-      "bm_email": "bm@company.com",
-      "agenda_ready": false,
-      "slides_ready": false,
-      "bm_confirmed": false,
-      "id": "meeting_20260405_002613",
-      "all_ready": false,
-      "missing_items": [
-        "agenda",
-        "slides",
-        "BM confirmation"
-      ]
+      "missing_items": ["agenda"]
     }
   ],
-  "last_updated": "2026-04-05T00:26:13.976758"
+  "last_updated": "2026-04-05T00:30:00"
 }
