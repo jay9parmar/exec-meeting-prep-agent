@@ -1,0 +1,83 @@
+{
+  "meetings": [
+    {
+      "id": "meeting_001",
+      "title": "Weekly Team Sync",
+      "date": "2026-04-10 10:00",
+      "bm_email": "team-lead@company.com",
+      "agenda_ready": true,
+      "slides_ready": true,
+      "bm_confirmed": true,
+      "all_ready": true,
+      "missing_items": []
+    },
+    {
+      "id": "meeting_002",
+      "title": "Q4 Executive Review",
+      "date": "2026-04-15 14:00",
+      "bm_email": "exec-bm@company.com",
+      "agenda_ready": false,
+      "slides_ready": false,
+      "bm_confirmed": false,
+      "all_ready": false,
+      "missing_items": [
+        "agenda",
+        "slides",
+        "BM confirmation"
+      ]
+    },
+    {
+      "id": "meeting_003",
+      "title": "Product Launch Planning",
+      "date": "2026-04-12 09:30",
+      "bm_email": "product-bm@company.com",
+      "agenda_ready": true,
+      "slides_ready": true,
+      "bm_confirmed": false,
+      "all_ready": false,
+      "missing_items": [
+        "BM confirmation"
+      ]
+    },
+    {
+      "id": "meeting_004",
+      "title": "Client Demo Presentation",
+      "date": "2026-04-08 15:00",
+      "bm_email": "client-bm@company.com",
+      "agenda_ready": true,
+      "slides_ready": true,
+      "bm_confirmed": true,
+      "all_ready": true,
+      "missing_items": []
+    },
+    {
+      "id": "meeting_005",
+      "title": "Budget Review",
+      "date": "2026-04-18 11:00",
+      "bm_email": "finance-bm@company.com",
+      "agenda_ready": false,
+      "slides_ready": true,
+      "bm_confirmed": true,
+      "all_ready": false,
+      "missing_items": [
+        "agenda"
+      ]
+    },
+    {
+      "title": "Q4 Executive Review",
+      "date": "2026-04-15 14:00",
+      "bm_email": "bm@company.com",
+      "agenda_ready": false,
+      "slides_ready": false,
+      "bm_confirmed": false,
+      "id": "meeting_20260405_002613",
+      "all_ready": false,
+      "missing_items": [
+        "agenda",
+        "slides",
+        "BM confirmation"
+      ]
+    }
+  ],
+  "last_updated": "2026-04-05T00:26:13.976758"
+}
